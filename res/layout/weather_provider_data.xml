@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center_horizontal">
+	
+	<TableRow
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		
+		<TextView
+			android:text="Temperature:"
+			style="@style/weatherProviderDataLeftStyle">
+		</TextView>
+		
+		<TextView
+			android:id="@+id/temperatureView"
+			style="@style/weatherProviderDataRightStyle">
+		</TextView>
+		
+	</TableRow>
+	
+	<TableRow
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		
+		<TextView
+			android:text="Humidity:"
+			style="@style/weatherProviderDataLeftStyle">
+		</TextView>
+		
+		<TextView
+			android:id="@+id/humidityView"
+			style="@style/weatherProviderDataRightStyle">
+		</TextView>
+		
+	</TableRow>
+	
+	<TableRow
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		
+		<TextView
+			android:text="Pressure:"
+			style="@style/weatherProviderDataLeftStyle">
+		</TextView>
+		
+		<TextView
+			android:id="@+id/pressureView"
+			style="@style/weatherProviderDataRightStyle">
+		</TextView>
+		
+	</TableRow>
+	
+	<TableRow
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		
+		<TextView
+			android:text="Wind Speed:"
+			style="@style/weatherProviderDataLeftStyle">
+		</TextView>
+		
+		<TextView
+			android:id="@+id/windSpeedView"
+			style="@style/weatherProviderDataRightStyle">
+		</TextView>
+		
+	</TableRow>
+	
+	<TableRow
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		
+		<TextView
+			android:text="Wind Direction:"
+			style="@style/weatherProviderDataLeftStyle">
+		</TextView>
+		
+		<TextView
+			android:id="@+id/windDirectionView"
+			style="@style/weatherProviderDataRightStyle">
+		</TextView>
+		
+	</TableRow>
+	
+	<TableRow
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		
+		<TextView
+			android:text="Wind Degrees:"
+			style="@style/weatherProviderDataLeftStyle">
+		</TextView>
+		
+		<TextView
+			android:id="@+id/windDegreesView"
+			style="@style/weatherProviderDataRightStyle">
+		</TextView>
+		
+	</TableRow>
+	
+	<TableRow
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		
+		<TextView
+			android:text="Station:"
+			style="@style/weatherProviderDataLeftStyle">
+		</TextView>
+		
+		<TextView
+			android:id="@+id/stationView"
+			style="@style/weatherProviderDataRightStyle">
+		</TextView>
+		
+	</TableRow>
+	
+	<TableRow
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		
+		<TextView
+			android:text="Station Distance:"
+			style="@style/weatherProviderDataLeftStyle">
+		</TextView>
+		
+		<TextView
+			android:id="@+id/stationDistanceView"
+			style="@style/weatherProviderDataRightStyle">
+		</TextView>
+		
+	</TableRow>
+	
+	<TableRow
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		
+		<TextView
+			android:text="Station Lat:"
+			style="@style/weatherProviderDataLeftStyle">
+		</TextView>
+		
+		<TextView
+			android:id="@+id/stationLatView"
+			style="@style/weatherProviderDataRightStyle">
+		</TextView>
+		
+	</TableRow>
+	
+	<TableRow
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		
+		<TextView
+			android:text="Station Lng:"
+			style="@style/weatherProviderDataLeftStyle">
+		</TextView>
+		
+		<TextView
+			android:id="@+id/stationLngView"
+			style="@style/weatherProviderDataRightStyle">
+		</TextView>
+		
+	</TableRow>
+	
+</TableLayout>

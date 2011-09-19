@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:scrollbars="none">
+	
+	<LinearLayout
+    	android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
+	    
+	    <!-- Sensor Calibration -->	    
+		<TextView
+			style="@style/solverParamTitleStyle"
+			android:layout_marginTop="30dp"
+			android:text="Sensor Calibration">
+		</TextView>
+	    
+	    <TableLayout
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content">
+	    	
+	    	<TableRow
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:layout_marginTop="20dp"
+	    		android:layout_marginBottom="15dp">
+	    		
+	    		<EditText
+	    			android:id="@+id/pref_edit_calibration"
+	    			android:editable="false"
+	    			android:layout_width="120dp"
+	    			android:layout_height="wrap_content"
+	    			android:layout_gravity="center_vertical"
+	    			android:layout_marginLeft="25dp"
+	    			android:layout_marginRight="10dp"
+	    			android:paddingLeft="30dp"
+	    			android:paddingRight="30dp"
+	    			android:paddingTop="10dp"
+	    			android:paddingBottom="10dp"
+	    			android:background="@color/dark_1"
+	    			android:textColor="@color/orange"
+	    			android:text="0.0">
+	    		</EditText>
+	    		
+	    		<TextView
+	    			android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+	    			android:layout_marginRight="7dp"
+	    			android:layout_gravity="center_vertical"
+	    			android:textSize="18sp"
+	    			android:text="offset">
+	    		</TextView>
+	    		
+	    		<Button
+	    			android:id="@+id/pref_button_calibration"
+	    			android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+	    			android:layout_gravity="center_vertical"
+	    			android:layout_marginLeft="12dp"
+	    			android:layout_marginRight="10dp"
+	    			android:text="Change">
+	    		</Button>
+	    		
+	    	</TableRow>
+	    	
+	    	<TableRow
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:layout_marginBottom="15dp">
+	    		
+	    		<EditText
+	    			android:id="@+id/pref_edit_calibration_new"
+	    			android:editable="false"
+	    			android:layout_width="120dp"
+	    			android:layout_height="wrap_content"
+	    			android:layout_gravity="center_vertical"
+	    			android:layout_marginLeft="25dp"
+	    			android:layout_marginRight="10dp"
+	    			android:paddingLeft="30dp"
+	    			android:paddingRight="30dp"
+	    			android:paddingTop="10dp"
+	    			android:paddingBottom="10dp"
+	    			android:visibility="gone"
+	    			android:background="@color/dark_1"
+	    			android:textColor="@color/orange"
+	    			android:text="0.0">
+	    		</EditText>
+	    		
+	    		<TextView
+	    			android:id="@+id/pref_label_calibration_new"
+	    			android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+	    			android:layout_marginRight="5dp"
+	    			android:layout_gravity="center_vertical"
+	    			android:visibility="gone"
+	    			android:textSize="18sp"
+	    			android:text="new">
+	    		</TextView>
+	    		
+	    		<Button
+	    			android:id="@+id/pref_button_calibration_reset"
+	    			android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+	    			android:layout_gravity="center_vertical"
+	    			android:layout_marginLeft="12dp"
+	    			android:layout_marginRight="10dp"
+	    			android:visibility="gone"
+	    			android:text="Reset">
+	    		</Button>
+	    		
+	    	</TableRow>
+	    	
+	    </TableLayout>
+	    
+	    <View
+			style="@style/spacerStyle">
+		</View>
+	    
+	    <!-- A1 -->
+	    <TextView
+			style="@style/solverParamTitleStyle"
+			android:text="Linear Air Resistance Coefficient (A1)">
+		</TextView>
+	    
+	    <TableLayout
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content">
+	    	
+	    	<TableRow
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:layout_marginTop="20dp"
+	    		android:layout_marginBottom="15dp">
+	    		
+	    		<EditText
+	    			android:id="@+id/pref_edit_a1"
+	    			android:layout_width="120dp"
+	    			android:layout_height="wrap_content"
+	    			android:layout_gravity="center_vertical"
+	    			android:layout_marginLeft="25dp"
+	    			android:layout_marginRight="10dp"
+	    			android:paddingLeft="40dp"
+	    			android:paddingRight="40dp"
+	    			android:paddingTop="10dp"
+	    			android:paddingBottom="10dp"
+	    			android:background="@color/dark_1"
+	    			android:textColor="@color/orange"
+	    			android:text="0.43">
+	    		</EditText>
+	    		
+	    		<TextView
+	    			android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+	    			android:layout_marginRight="40dp"
+	    			android:layout_gravity="center_vertical"
+	    			android:textSize="18sp"
+	    			android:text="">
+	    		</TextView>
+	    		
+	    		<Button
+	    			android:id="@+id/pref_button_a1"
+	    			android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+	    			android:layout_gravity="center_vertical"
+	    			android:layout_marginLeft="25dp"
+	    			android:layout_marginRight="10dp"
+	    			android:text="Change">
+	    		</Button>
+	    		
+	    	</TableRow>
+	    	
+	    	<SeekBar
+	   			android:id="@+id/pref_seek_a1"
+	   			android:layout_width="fill_parent"
+	   			android:layout_height="wrap_content"
+	   			android:layout_span="2"
+	   			android:layout_gravity="center_horizontal"
+	   			android:layout_marginLeft="25dp"
+	   			android:layout_marginRight="25dp"
+	   			android:visibility="gone"
+	   			android:progress="43"
+	   			android:max="100">	<!-- 0.00 to 1.00 -->
+	   		</SeekBar>
+	    	
+	    </TableLayout>
+	    
+	    <View
+			style="@style/spacerStyle">
+		</View>
+		
+		<!-- wc -->
+		<TextView
+			style="@style/solverParamTitleStyle"
+			android:text="Weight Cyclist (wc)">
+		</TextView>
+	    
+	    <TableLayout
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content">
+	    	
+	    	<TableRow
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:layout_marginTop="20dp"
+	    		android:layout_marginBottom="15dp">
+	    		
+	    		<EditText
+	    			android:id="@+id/pref_edit_wc"
+	    			android:layout_width="120dp"
+	    			android:layout_height="wrap_content"
+	    			android:layout_gravity="center_vertical"
+	    			android:layout_marginLeft="25dp"
+	    			android:layout_marginRight="10dp"
+	    			android:paddingLeft="30dp"
+	    			android:paddingRight="30dp"
+	    			android:paddingTop="10dp"
+	    			android:paddingBottom="10dp"
+	    			android:background="@color/dark_1"
+	    			android:textColor="@color/orange"
+	    			android:text="75">
+	    		</EditText>
+	    		
+	    		<TextView
+	    			android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+	    			android:layout_marginRight="5dp"
+	    			android:layout_gravity="center_vertical"
+	    			android:textSize="18sp"
+	    			android:text="kg">
+	    		</TextView>
+	    		
+	    		<Button
+	    			android:id="@+id/pref_button_wc"
+	    			android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+	    			android:layout_gravity="center_vertical"
+	    			android:layout_marginLeft="43dp"
+	    			android:layout_marginRight="10dp"
+	    			android:text="Change">
+	    		</Button>
+	    		
+	    	</TableRow>
+	    	
+	    	<SeekBar
+	   			android:id="@+id/pref_seek_wc"
+	   			android:layout_width="fill_parent"
+	   			android:layout_height="wrap_content"
+	   			android:layout_span="2"
+	   			android:layout_gravity="center_horizontal"
+	   			android:layout_marginLeft="25dp"
+	   			android:layout_marginRight="25dp"
+	   			android:visibility="gone"
+	   			android:progress="75"
+	   			android:max="100">	<!-- 0 to 100 -->
+	   		</SeekBar>
+	    	
+	    </TableLayout>
+	    
+	    <View
+			style="@style/spacerStyle">
+		</View>
+		
+		<!-- wm -->
+		<TextView
+			style="@style/solverParamTitleStyle"
+			android:text="Weight Machine (wm)">
+		</TextView>
+	    
+	    <TableLayout
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content">
+	    	
+	    	<TableRow
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:layout_marginTop="20dp"
+	    		android:layout_marginBottom="15dp">
+	    		
+	    		<EditText
+	    			android:id="@+id/pref_edit_wm"
+	    			android:layout_width="120dp"
+	    			android:layout_height="wrap_content"
+	    			android:layout_gravity="center_vertical"
+	    			android:layout_marginLeft="25dp"
+	    			android:layout_marginRight="10dp"
+	    			android:paddingLeft="30dp"
+	    			android:paddingRight="30dp"
+	    			android:paddingTop="10dp"
+	    			android:paddingBottom="10dp"
+	    			android:background="@color/dark_1"
+	    			android:textColor="@color/orange"
+	    			android:text="15">
+	    		</EditText>
+	    		
+	    		<TextView
+	    			android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+	    			android:layout_marginRight="5dp"
+	    			android:layout_gravity="center_vertical"
+	    			android:textSize="18sp"
+	    			android:text="kg">
+	    		</TextView>
+	    		
+	    		<Button
+	    			android:id="@+id/pref_button_wm"
+	    			android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+	    			android:layout_gravity="center_vertical"
+	    			android:layout_marginLeft="43dp"
+	    			android:layout_marginRight="10dp"
+	    			android:text="Change">
+	    		</Button>
+	    		
+	    	</TableRow>
+	    	
+	    	<SeekBar
+	   			android:id="@+id/pref_seek_wm"
+	   			android:layout_width="fill_parent"
+	   			android:layout_height="wrap_content"
+	   			android:layout_span="2"
+	   			android:layout_gravity="center_horizontal"
+	   			android:layout_marginLeft="25dp"
+	   			android:layout_marginRight="25dp"
+	   			android:visibility="gone"
+	   			android:progress="15"
+	   			android:max="30">	<!-- 0 to 30 -->
+	   		</SeekBar>
+	    	
+	    </TableLayout>
+	    
+	    <View
+			style="@style/spacerStyle">
+		</View>
+		
+		<!-- r -->
+		<TextView
+			style="@style/solverParamTitleStyle"
+			android:text="Rolling Friction (r)">
+		</TextView>
+	    
+	    <TableLayout
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content">
+	    	
+	    	<TableRow
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:layout_marginTop="20dp"
+	    		android:layout_marginBottom="15dp">
+	    		
+	    		<EditText
+	    			android:id="@+id/pref_edit_r"
+	    			android:layout_width="120dp"
+	    			android:layout_height="wrap_content"
+	    			android:layout_gravity="center_vertical"
+	    			android:layout_marginLeft="25dp"
+	    			android:layout_marginRight="10dp"
+	    			android:paddingLeft="30dp"
+	    			android:paddingRight="30dp"
+	    			android:paddingTop="10dp"
+	    			android:paddingBottom="10dp"
+	    			android:background="@color/dark_1"
+	    			android:textColor="@color/orange"
+	    			android:text="0.004">
+	    		</EditText>
+	    		
+	    		<TextView
+	    			android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+	    			android:layout_marginRight="5dp"
+	    			android:layout_gravity="center_vertical"
+	    			android:textSize="18sp"
+	    			android:text="">
+	    		</TextView>
+	    		
+	    		<Button
+	    			android:id="@+id/pref_button_r"
+	    			android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+	    			android:layout_gravity="center_vertical"
+	    			android:layout_marginLeft="61dp"
+	    			android:layout_marginRight="10dp"
+	    			android:text="Change">
+	    		</Button>
+	    		
+	    	</TableRow>
+	    	
+	    	<SeekBar
+	   			android:id="@+id/pref_seek_r"
+	   			android:layout_width="fill_parent"
+	   			android:layout_height="wrap_content"
+	   			android:layout_span="2"
+	   			android:layout_gravity="center_horizontal"
+	   			android:layout_marginLeft="25dp"
+	   			android:layout_marginRight="25dp"
+	   			android:visibility="gone"
+	   			android:progress="4"
+	   			android:max="25">	<!-- 0.000 to 0.025 -->
+	   		</SeekBar>
+	    	
+	    </TableLayout>
+	    
+	    <View
+			style="@style/spacerStyle">
+		</View>
+		
+		<!-- t -->
+		<TextView
+			style="@style/solverParamTitleStyle"
+			android:text="Transmission Efficiency (t)">
+		</TextView>
+	    
+	    <TableLayout
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content">
+	    	
+	    	<TableRow
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:layout_marginTop="20dp"
+	    		android:layout_marginBottom="15dp">
+	    		
+	    		<EditText
+	    			android:id="@+id/pref_edit_t"
+	    			android:layout_width="120dp"
+	    			android:layout_height="wrap_content"
+	    			android:layout_gravity="center_vertical"
+	    			android:layout_marginLeft="25dp"
+	    			android:layout_marginRight="10dp"
+	    			android:paddingLeft="30dp"
+	    			android:paddingRight="30dp"
+	    			android:paddingTop="10dp"
+	    			android:paddingBottom="10dp"
+	    			android:background="@color/dark_1"
+	    			android:textColor="@color/orange"
+	    			android:text="95">
+	    		</EditText>
+	    		
+	    		<TextView
+	    			android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+	    			android:layout_marginRight="5dp"
+	    			android:layout_gravity="center_vertical"
+	    			android:textSize="18sp"
+	    			android:text="%">
+	    		</TextView>
+	    		
+	    		<Button
+	    			android:id="@+id/pref_button_t"
+	    			android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+	    			android:layout_gravity="center_vertical"
+	    			android:layout_marginLeft="47dp"
+	    			android:layout_marginRight="10dp"
+	    			android:text="Change">
+	    		</Button>
+	    		
+	    	</TableRow>
+	    	
+	    	<SeekBar
+	   			android:id="@+id/pref_seek_t"
+	   			android:layout_width="fill_parent"
+	   			android:layout_height="wrap_content"
+	   			android:layout_span="2"
+	   			android:layout_gravity="center_horizontal"
+	   			android:layout_marginLeft="25dp"
+	   			android:layout_marginRight="25dp"
+	   			android:visibility="gone"
+	   			android:progress="20"
+	   			android:max="25">	<!-- 75 to 100 -->
+	   		</SeekBar>
+	    	
+	    </TableLayout>
+	    
+	    <View
+			style="@style/spacerStyle">
+		</View>
+		
+		<!-- Restore Default Values -->
+		<TextView
+			style="@style/solverParamTitleStyle"
+			android:text="Reset">
+		</TextView>
+		
+		<Button
+   			android:id="@+id/pref_button_defaults"
+   			android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"
+   			android:layout_gravity="center_vertical"
+   			android:layout_marginTop="20dp"
+	    	android:layout_marginBottom="15dp"
+   			android:layout_marginLeft="25dp"
+   			android:layout_marginRight="0dp"
+   			android:paddingTop="30dp"
+	    	android:paddingBottom="30dp"
+	    	android:textSize="18sp"
+   			android:text="Restore Default Values">
+   		</Button>
+   		
+   		<View
+			style="@style/spacerStyle">
+		</View>
+	    
+    </LinearLayout>		
+		
+</ScrollView>

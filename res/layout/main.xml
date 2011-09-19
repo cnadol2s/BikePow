@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    
+    <ViewFlipper
+    	android:id="@+id/viewFlipper"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
+	    
+	    <!-- 1 -->
+	    <bike.pow.gui.GeoScrollView
+	    	android:id="@+id/geo_scroll_view"
+	    	android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:scrollbars="none">
+	    </bike.pow.gui.GeoScrollView>
+	    
+		<!--
+		<View
+			style="@style/spacerStyle">
+		</View> 
+		 -->
+		
+	    <!-- 2 -->
+	    <bike.pow.gui.WeatherScrollView
+	    	android:id="@+id/weather_scroll_view"
+	    	android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:scrollbars="none">
+	    </bike.pow.gui.WeatherScrollView>
+		
+		<!--
+		<View
+			style="@style/spacerStyle">
+		</View> 
+		 -->
+		
+		<!-- 3 -->
+		<LinearLayout
+			android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent">
+		    
+		    <TextView
+				style="@style/weatherProviderLabelStyle"
+				android:text="Google Weather:">
+			</TextView>
+			
+			<bike.pow.gui.WeatherTableLayout
+				android:id="@+id/googleWeatherTable"
+				style="@style/weatherTableStyle">
+			</bike.pow.gui.WeatherTableLayout>
+		    
+		</LinearLayout>
+		
+		<!-- 4 -->
+		<LinearLayout
+			android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent">
+		    
+		    <TextView
+				style="@style/weatherProviderLabelStyle"
+				android:text="WeatherBug:">
+			</TextView>
+			
+			<bike.pow.gui.WeatherTableLayout
+				android:id="@+id/weatherBugTable"
+				style="@style/weatherTableStyle">
+			</bike.pow.gui.WeatherTableLayout>
+		    
+		</LinearLayout>
+		
+		<!-- 5 -->
+		<LinearLayout
+			android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent">
+		    
+		    <TextView
+				style="@style/weatherProviderLabelStyle"
+				android:text="Weather Underground:">
+			</TextView>
+			
+			<bike.pow.gui.WeatherTableLayout
+				android:id="@+id/weatherUndergroundTable"
+				style="@style/weatherTableStyle">
+			</bike.pow.gui.WeatherTableLayout>
+		    
+		</LinearLayout>	
+		
+		<!-- 6 -->
+		<LinearLayout
+			android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent">
+		    
+		    <TextView
+				style="@style/weatherProviderLabelStyle"
+				android:text="World Weather:">
+			</TextView>
+			
+			<bike.pow.gui.WeatherTableLayout
+				android:id="@+id/worldWeatherTable"
+				style="@style/weatherTableStyle">
+			</bike.pow.gui.WeatherTableLayout>
+		    
+		</LinearLayout>	
+			
+		<!--
+		<View
+			style="@style/spacerStyle">
+		</View> 
+		 -->
+		
+		<!-- 7 -->
+		<LinearLayout
+			android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent">
+		    
+		    <bike.pow.gui.SolverTableLayout
+				android:id="@+id/solverTable"
+				style="@style/solverTableStyle">
+			</bike.pow.gui.SolverTableLayout>
+		    
+		</LinearLayout>
+		
+		<!--
+		<View
+			style="@style/spacerStyle">
+		</View> 
+		 -->
+		 
+		 <!-- 8 -->
+		 <bike.pow.gui.SolverScrollView
+		 	android:id="@+id/solver_scroll_view"
+		 	android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:scrollbars="none">
+		 </bike.pow.gui.SolverScrollView>
+	    
+    </ViewFlipper>
+    
+</LinearLayout>

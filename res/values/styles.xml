@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="startButtonStyle">
+    	<item name="android:layout_width">wrap_content</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:layout_gravity">center</item>
+    	<item name="android:layout_margin">10dp</item>
+    	<item name="android:paddingLeft">40dp</item>
+    	<item name="android:paddingRight">40dp</item>
+    	<item name="android:paddingTop">20dp</item>
+    	<item name="android:paddingBottom">20dp</item>
+    	<item name="android:textSize">20sp</item>
+    </style>
+    
+    <style name="stopButtonStyle" parent="@style/startButtonStyle">
+    	<item name="android:layout_marginTop">10dp</item>
+    </style>
+    
+    <style name="geoViewStyle">
+    	<item name="android:layout_width">wrap_content</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:layout_gravity">center_horizontal</item>
+    	<item name="android:textSize">20sp</item>
+    	<item name="android:layout_marginTop">10dp</item>
+    </style>
+    
+    <style name="latLngLabelStyle">
+    	<item name="android:layout_width">wrap_content</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:layout_marginTop">10dp</item>
+    	<item name="android:layout_marginLeft">10dp</item>
+    	<item name="android:textSize">20sp</item>
+    </style>
+    
+    <style name="latLngEditStyle" parent="@style/latLngLabelStyle">
+    	<item name="android:inputType">numberDecimal</item>
+    	<item name="android:lines">1</item>
+    </style>
+    
+    <style name="spacerStyle">
+    	<item name="android:layout_width">fill_parent</item>
+    	<item name="android:layout_height">2dp</item>
+    	<item name="android:layout_marginTop">30dp</item>
+    	<item name="android:layout_marginBottom">30dp</item>
+    	<item name="android:background">@color/grey</item>
+    </style>
+    
+    <style name="getWeatherButtonStyle">
+    	<item name="android:layout_width">fill_parent</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:layout_gravity">center_horizontal</item>
+    	<item name="android:layout_marginLeft">10dp</item>
+    	<item name="android:layout_marginRight">10dp</item>
+    	<item name="android:layout_marginTop">20dp</item>
+    	<item name="android:layout_marginBottom">10dp</item>
+    	<item name="android:paddingTop">20dp</item>
+    	<item name="android:paddingBottom">20dp</item>
+    	<item name="android:minHeight">30dp</item>
+    	<item name="android:textSize">20sp</item>
+    </style>
+    
+    <style name="weatherProviderLabelStyle">
+    	<item name="android:layout_width">wrap_content</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:layout_marginTop">30dp</item>
+    	<item name="android:layout_marginLeft">10dp</item>
+    	<item name="android:textSize">17sp</item>
+    	<item name="android:textColor">@color/lime</item>
+    </style>
+    
+    <style name="xmlResponseStyle">
+    	<item name="android:layout_width">wrap_content</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:layout_gravity">center_horizontal</item>
+    	<item name="android:layout_marginTop">10dp</item>
+    	<item name="android:textSize">22sp</item>
+    	<item name="android:text">[XML Response]</item>
+    </style>
+    
+    <style name="distanceViewStyle" parent="xmlResponseStyle">
+    	<item name="android:layout_marginTop">5dp</item>
+    	<item name="android:text">[Station Distance]</item>
+    </style>
+    
+    <style name="weatherTableStyle">
+    	<item name="android:layout_width">fill_parent</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:layout_marginTop">10dp</item>
+    	<item name="android:layout_marginBottom">10dp</item>
+    </style>
+    
+    <style name="weatherProviderDataLeftStyle">
+    	<item name="android:layout_width">wrap_content</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:paddingLeft">20dp</item>
+    	<item name="android:paddingRight">10dp</item>
+    	<item name="android:textSize">17sp</item>
+    </style>
+    
+    <style name="weatherProviderDataRightStyle" parent="weatherProviderDataLeftStyle">
+    	<item name="android:textColor">@color/orange</item>
+    	<item name="android:text">n/a</item>
+    </style>
+    
+    <style name="solverLabelStyle" parent="weatherProviderLabelStyle">
+    	<item name="android:layout_marginTop">10dp</item>
+    	<item name="android:layout_marginLeft">10dp</item>
+    </style>
+    
+    <style name="solverTableStyle">
+    	<item name="android:layout_width">wrap_content</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:layout_gravity">center_horizontal</item>
+    	<item name="android:layout_marginTop">10dp</item>
+    	<item name="android:layout_marginBottom">10dp</item>
+    </style>
+    
+    <style name="solverDataLeftStyle" parent="weatherProviderDataLeftStyle">
+    </style>
+    
+    <style name="solverDataRightStyle" parent="weatherProviderDataRightStyle">
+    </style>
+    
+    <style name="solverParamTitleStyle" parent="weatherProviderLabelStyle">
+    	<item name="android:layout_marginTop">0dp</item>
+    </style>
+    
+</resources>

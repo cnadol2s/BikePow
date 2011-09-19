@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:scrollbars="none">
+	
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal">
+		
+			<Button
+				android:id="@+id/startButton"
+				style="@style/startButtonStyle"
+				android:text="Start">
+			</Button>
+			
+			<Button
+				android:id="@+id/stopButton"
+				style="@style/stopButtonStyle"
+				android:text="Stop">
+			</Button>
+		
+		</LinearLayout>
+		
+		<TextView
+			android:id="@+id/statusView"
+			style="@style/geoViewStyle"
+			android:text="[service status]">
+		</TextView>
+		
+		<TextView
+			android:id="@+id/providerListView"
+			style="@style/geoViewStyle"
+			android:text="[providerList]">
+		</TextView>
+		
+		<TextView
+			android:id="@+id/providerView"
+			style="@style/geoViewStyle"
+			android:text="[provider]">
+		</TextView>
+		
+		<TextView
+			android:id="@+id/coordinatesView"
+			style="@style/geoViewStyle"
+			android:text="[coordinates]">
+		</TextView>
+		
+		<TextView
+			android:id="@+id/addressView"
+			style="@style/geoViewStyle"
+			android:text="[address]">
+		</TextView>
+		
+		<TextView
+			android:id="@+id/speedView"
+			style="@style/geoViewStyle"
+			android:text="[speed]">
+		</TextView>
+		
+		<TextView
+			android:id="@+id/bearingView"
+			style="@style/geoViewStyle"
+			android:text="[bearing]">
+		</TextView>
+		
+		<TextView
+			android:id="@+id/altitudeView"
+			style="@style/geoViewStyle"
+			android:text="[altitude]">
+		</TextView>
+		
+		<TextView
+			android:id="@+id/accuracyView"
+			style="@style/geoViewStyle"
+			android:text="[accuracy]"
+			android:layout_marginBottom="50dp">
+		</TextView>
+		
+	</LinearLayout>
+	
+</ScrollView>

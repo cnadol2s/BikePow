@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:scrollbars="none">
+	
+	<LinearLayout
+    	android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
+	    
+	    <TableLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			
+			<TableRow
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				
+				<TextView
+					style="@style/latLngLabelStyle"
+					android:text="Lat">
+				</TextView>
+				
+				<EditText
+					android:id="@+id/editLat"
+					style="@style/latLngEditStyle"
+					android:text="50.734139">
+				</EditText>
+			
+			</TableRow>
+			
+			<TableRow
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				
+				<TextView
+					style="@style/latLngLabelStyle"
+					android:text="Lng">
+				</TextView>
+				
+				<EditText
+					android:id="@+id/editLng"
+					style="@style/latLngEditStyle"
+					android:text="7.09725">
+				</EditText>
+				
+			</TableRow>
+			
+		</TableLayout>
+		
+		<Button
+			android:id="@+id/getWeatherButton"
+			style="@style/getWeatherButtonStyle"
+			android:text="Get Weather Data">
+		</Button>
+		
+		<TextView
+			style="@style/weatherProviderLabelStyle"
+			android:text="WeatherBug:">
+		</TextView>
+		
+		<TextView
+			android:id="@+id/weatherBugView"
+			style="@style/xmlResponseStyle">
+		</TextView>
+		
+		<TextView
+			android:id="@+id/weatherBugDistanceView"
+			style="@style/distanceViewStyle">
+		</TextView>
+		
+		<TextView
+			style="@style/weatherProviderLabelStyle"
+			android:text="Google Weather:">
+		</TextView>
+		
+		<TextView
+			android:id="@+id/googleWeatherView"
+			style="@style/xmlResponseStyle">
+		</TextView>
+		
+		<TextView
+			style="@style/weatherProviderLabelStyle"
+			android:text="Weather Underground:">
+		</TextView>
+		
+		<TextView
+			android:id="@+id/weatherUndergroundView"
+			style="@style/xmlResponseStyle">
+		</TextView>
+		
+		<TextView
+			android:id="@+id/weatherUndergroundDistanceView"
+			style="@style/distanceViewStyle">
+		</TextView>
+		
+		<TextView
+			style="@style/weatherProviderLabelStyle"
+			android:text="World Weather:">
+		</TextView>
+		
+		<TextView
+			android:id="@+id/worldWeatherView"
+			style="@style/xmlResponseStyle"
+			android:layout_marginBottom="50dp">
+		</TextView>
+	    
+    </LinearLayout>		
+		
+</ScrollView>
